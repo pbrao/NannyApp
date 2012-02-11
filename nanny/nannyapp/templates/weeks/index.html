@@ -1,0 +1,9 @@
+{% if all_weeks_list %}
+	<ul>
+		{% for week in all_weeks_list %}
+		    <li><a href = "/nannyapp/weeks/{{ week.id }}/">{{ week.week_ending}}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>No weeks are available.</p>
+{% endif %}
