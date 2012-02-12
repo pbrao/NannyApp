@@ -1,0 +1,13 @@
+<h1>Week Selected:  {{ week.0.week_ending }}</h1>
+
+{% for dailytimesheet in week %}
+	<ul>
+		<li>
+			{{ dailytimesheet.day }}
+			{{ dailytimesheet.start_time }}
+			{{ dailytimesheet.end_time }}
+			
+			
+		</li>
+	</ul>
+{% endfor %}
